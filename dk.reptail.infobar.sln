@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoBar", "InfoBar\InfoBar.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoBar.Modules", "InfoBar.Modules\InfoBar.Modules.csproj", "{5CEF2FE7-B3AA-408C-8644-0F7513818784}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoBar.Libraies", "InfoBar.Libraies\InfoBar.Libraies.csproj", "{8A6B9344-E55F-4EDB-AA2D-A5DF34578F9A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoBar.Libraries", "InfoBar.Libraries\InfoBar.Libraries.csproj", "{8A6B9344-E55F-4EDB-AA2D-A5DF34578F9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

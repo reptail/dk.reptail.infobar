@@ -7,6 +7,7 @@ Availible Modules:
   MemoryMonitor
   NetworkMonitor
   WinampControl (remember to change path)
+  Spotify
   
   ... more to come!
   
@@ -38,5 +39,6 @@ Availible Modules:
     <!--<WinampSongTicker>
       <path>C:\Program Files (x86)\Winamp\winamp.exe</path>
     </WinampSongTicker>-->
+    <Spotify />
   </Modules>  
 </Settings>

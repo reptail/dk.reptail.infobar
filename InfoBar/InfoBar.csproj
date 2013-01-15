@@ -173,9 +173,9 @@
     <Compile Include="TaskBarInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\InfoBar.Libraies\InfoBar.Libraies.csproj">
+    <ProjectReference Include="..\InfoBar.Libraries\InfoBar.Libraries.csproj">
       <Project>{8a6b9344-e55f-4edb-aa2d-a5df34578f9a}</Project>
-      <Name>InfoBar.Libraies</Name>
+      <Name>InfoBar.Libraries</Name>
     </ProjectReference>
     <ProjectReference Include="..\InfoBar.Modules\InfoBar.Modules.csproj">
       <Project>{5CEF2FE7-B3AA-408C-8644-0F7513818784}</Project>
@@ -195,7 +195,7 @@
     <Content Include="Resources\triangle_down_8.png" />
     <Content Include="Resources\triangle_left_6.png" />
     <Content Include="Resources\triangle_right_6.png" />
-    <Content Include="Settings.xml">
+    <Content Include="InfoBar.Settings.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

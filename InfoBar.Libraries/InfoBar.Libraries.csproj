@@ -7,8 +7,8 @@
     <ProjectGuid>{8A6B9344-E55F-4EDB-AA2D-A5DF34578F9A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>dk.reptail.infobar.Libraies</RootNamespace>
-    <AssemblyName>InfoBar.Libraies</AssemblyName>
+    <RootNamespace>dk.reptail.infobar.Libraries</RootNamespace>
+    <AssemblyName>InfoBar.Libraries</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>
