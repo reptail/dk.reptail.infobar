@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Availible Modules:
+  Uptime
+  BatteryMonitor
+  CPUMonitor
+  MemoryMonitor
+  NetworkMonitor
+  WinampControl (remember to change path)
+  
+  ... more to come!
+  
+
+-->
+
+<Settings>
+  <Global>
+    <BackColor>Gainsboro</BackColor>
+    <GraphColor>DarkBlue</GraphColor>
+    <Location>Bottom</Location>
+  </Global>
+  <Modules>
+    <Uptime>
+      <HideDays>True</HideDays>
+    </Uptime>
+    <!--<BatteryMonitor />-->
+    <CPUMonitor />
+    <MemoryMonitor />
+    <NetworkMonitor>
+      <Interface>a</Interface>
+      <Interface>s</Interface>
+      <Interface>d</Interface>
+      <Interface>f</Interface>
+    </NetworkMonitor>
+    <!--<WinampControl>
+      <Path>C:\Program Files (x86)\Winamp\winamp.exe</Path>
+    </WinampControl>-->
+    <!--<WinampSongTicker>
+      <path>C:\Program Files (x86)\Winamp\winamp.exe</path>
+    </WinampSongTicker>-->
+  </Modules>  
+</Settings>

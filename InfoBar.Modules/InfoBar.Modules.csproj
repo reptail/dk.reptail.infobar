@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5CEF2FE7-B3AA-408C-8644-0F7513818784}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dk.reptail.infobar.Modules</RootNamespace>
+    <AssemblyName>InfoBar.Modules</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'FinalRelease|AnyCPU'">
+    <OutputPath>bin\FinalRelease\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\dk.reptail.repbar.modules.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BatteryMonitor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BatteryMonitor.Designer.cs">
+      <DependentUpon>BatteryMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinampSongTicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WinampSongTicker.Designer.cs">
+      <DependentUpon>WinampSongTicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CPUMonitor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CPUMonitor.Designer.cs">
+      <DependentUpon>CPUMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemoryMonitor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MemoryMonitor.Designer.cs">
+      <DependentUpon>MemoryMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbstractModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NetworkMonitor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NetworkMonitor.Designer.cs">
+      <DependentUpon>NetworkMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Seperator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Seperator.Designer.cs">
+      <DependentUpon>Seperator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uptime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uptime.Designer.cs">
+      <DependentUpon>Uptime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoogleSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GoogleSearch.Designer.cs">
+      <DependentUpon>GoogleSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinampControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WinampControl.Designer.cs">
+      <DependentUpon>WinampControl.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BatteryMonitor.resx">
+      <DependentUpon>BatteryMonitor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinampSongTicker.resx">
+      <DependentUpon>WinampSongTicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CPUMonitor.resx">
+      <DependentUpon>CPUMonitor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemoryMonitor.resx">
+      <DependentUpon>MemoryMonitor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NetworkMonitor.resx">
+      <DependentUpon>NetworkMonitor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seperator.resx">
+      <DependentUpon>Seperator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uptime.resx">
+      <DependentUpon>Uptime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoogleSearch.resx">
+      <DependentUpon>GoogleSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinampControl.resx">
+      <DependentUpon>WinampControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black_down_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black_up_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chip_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\memory_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power_15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up_down_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winamp_15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winamp_next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winamp_pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winamp_play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winamp_prev.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winamp_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InfoBar.Libraies\InfoBar.Libraies.csproj">
+      <Project>{8a6b9344-e55f-4edb-aa2d-a5df34578f9a}</Project>
+      <Name>InfoBar.Libraies</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,10 @@
+RepBar TODO:
+=======================================================
+Færdiggøre Conf. (droppet, så længe det kun er til personligt brug)
+
+Manglende moduler:
+  RSS
+  Google Search
+  Lock-key status
+
+Lave tjek for om app allerede kører!
