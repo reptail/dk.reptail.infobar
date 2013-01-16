@@ -76,6 +76,14 @@
     <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.0.8.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\ExternalLibraries\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SpotifyLocalAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\ExternalLibraries\SpotifyLocalAPI.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -98,6 +106,12 @@
     </Compile>
     <Compile Include="BatteryMonitor.Designer.cs">
       <DependentUpon>BatteryMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spotify.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Spotify.Designer.cs">
+      <DependentUpon>Spotify.cs</DependentUpon>
     </Compile>
     <Compile Include="WinampSongTicker.cs">
       <SubType>UserControl</SubType>
@@ -162,6 +176,10 @@
       <DependentUpon>BatteryMonitor.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Spotify.resx">
+      <DependentUpon>Spotify.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="WinampSongTicker.resx">
       <DependentUpon>WinampSongTicker.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -200,6 +218,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Resources\black_down_8.png" />
   </ItemGroup>
   <ItemGroup>
@@ -260,6 +279,11 @@
       <Project>{8a6b9344-e55f-4edb-aa2d-a5df34578f9a}</Project>
       <Name>InfoBar.Libraries</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExternalLibraries\Newtonsoft.Json.dll" />
+    <Content Include="Resources\ExternalLibraries\SpotifyLocalAPI.dll" />
+    <Content Include="Resources\spotify_15.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

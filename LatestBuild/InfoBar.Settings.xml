@@ -39,6 +39,6 @@ Availible Modules:
     <!--<WinampSongTicker>
       <path>C:\Program Files (x86)\Winamp\winamp.exe</path>
     </WinampSongTicker>-->
-    <Spotify />
+    <!--<Spotify />-->
   </Modules>  
 </Settings>

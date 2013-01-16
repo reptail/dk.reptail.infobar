@@ -116,7 +116,7 @@ namespace dk.reptail.infobar
 
         private void LoadSettings()
         {
-            string file = "Settings.xml";
+            string file = "InfoBar.Settings.xml";
             XmlDocument doc = new XmlDocument();
             doc.Load(file);
 
@@ -157,7 +157,7 @@ namespace dk.reptail.infobar
                         AddModule(new WinampSongTicker(n.ChildNodes[0].FirstChild.Value));
                         break;
                     case "Spotify":
-
+                        AddModule(new Spotify());
                         break;
                 }
 
